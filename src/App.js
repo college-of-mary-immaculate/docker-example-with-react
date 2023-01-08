@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Helmet from "react-helmet"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Helmet>
+        <title>Docker Hosted ReactApp</title>
+      </Helmet>
+      <div className="h-full w-full flex flex-column justify-center items-center">
+        <h1 className="center text-7xl font-bold text-yellow-200">
+          Docker Hosted <span className="text-cyan-200 animate-pulse">ReactApp</span>
+        </h1>
+      </div>
+    </>
   );
 }
 
